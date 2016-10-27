@@ -42,6 +42,7 @@
     "node": "0.10.x"
   },
   "dependencies": {
+    "bcrypt": "^0.8.7",
     "body-parser": ">=1.9.2",
     "cors": "^2.7.1",
     "express": ">=4.9.8",
