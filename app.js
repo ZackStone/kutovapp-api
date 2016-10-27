@@ -22,7 +22,6 @@ var projetos    = require('./routes/projetos.js'),
 // get db config file
 var config = require('./config/database');
 // Conecta ao banco de dados
-mongoose.Promise = global.Promise;
 mongoose.connect(config.database);
 
 //=========================================
