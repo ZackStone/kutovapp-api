@@ -1,0 +1,52 @@
+{
+  "name": "kutovapp",
+  "version": "0.0.1",
+  "description": "kutovapp",
+  "contributors": [
+    {
+      "name": "Mateus Fernando",
+      "email": "mfpinheiro@sga.pucminas.br"
+    },
+    {
+      "name": "Robson Piere",
+      "email": "nao@sei.com"
+    },
+    {
+      "name": "Thiago Higino",
+      "email": "nao@sei.com"
+    },
+    {
+      "name": "Vinicius Ponciano",
+      "email": "nao@sei.com"
+    },
+    {
+      "name": "Yitzhak Stone",
+      "email": "andrade@hotmail.com.br"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YitzhakStone/kutovapp-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YitzhakStone/kutovapp-api/issues"
+  },
+  "homepage": "https://github.com/YitzhakStone/kutovapp-api",
+  "private": true,
+  "main": "./bin/www",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "body-parser": ">=1.9.2",
+    "cors": "^2.7.1",
+    "express": ">=4.9.8",
+    "mongodb": "^2.1.16",
+    "mongoose": "^4.4.13",
+    "morgan": "~1.5.0"
+  }
+}
