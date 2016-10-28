@@ -7,6 +7,8 @@ var router = express.Router();
 router.route('/').get(projetosCtrl.getProjetos);
 router.route('/').post(projetosCtrl.postProjeto);
 
+router.route('/do-usuario/:id').get(projetosCtrl.getProjetosDoUsuario);
+
 router.route('/:id')
 	.get(projetosCtrl.getProjeto)
 	.put(projetosCtrl.putProjeto)

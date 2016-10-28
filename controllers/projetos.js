@@ -34,6 +34,16 @@ function getProjeto(req,res){
 	});
 }
 
+function getProjetosDoUsuario(req,res){
+	Projeto.find({usuario:req.params.id}, function(err,resProjs){
+		if(err){
+			res.send(err);
+		} else {
+			res.json(resProjs);
+		}
+	});
+}
+
 function putProjeto(req,res){
 	Projeto.findOne({_id:req.params.id},function(err,proj){
 
@@ -76,5 +86,6 @@ module.exports = {
 	postProjeto: postProjeto,
 	getProjeto: getProjeto,
 	putProjeto: putProjeto,
-	deleteProjeto: deleteProjeto
+	deleteProjeto: deleteProjeto,
+	getProjetosDoUsuario: getProjetosDoUsuario
 }

@@ -28,8 +28,8 @@ sudo gedit /etc/environment
 ```
 - Adicionar as linhas:
 ```sh
-KUTOVAPP_API_DBUSER="xxx"
-KUTOVAPP_API_DBPASS="xxx"
+export KUTOVAPP_API_DBUSER="xxx"
+export KUTOVAPP_API_DBPASS="xxx"
 ```
 - Atualizar:
 ```sh

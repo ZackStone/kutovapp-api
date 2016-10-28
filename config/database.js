@@ -9,5 +9,6 @@ var database = 'mongodb://' + dbuser + ':' + dbpass + '@ds025762.mlab.com:25762/
 
 
 module.exports = {
+	'secret': 's40G@br13lM1lGr4u',
 	'database': database
 };

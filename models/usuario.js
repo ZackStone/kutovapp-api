@@ -3,9 +3,7 @@ var Schema = mongoose.Schema;
 var bcrypt = require('bcrypt');
 
 var usuarioSchema = new Schema({
-	tipoUsu: String, /* cliente / prestador */
 	nome: String,
-	cpf: String,
 	email: {
 		type: String,
 		unique: true,
@@ -14,30 +12,7 @@ var usuarioSchema = new Schema({
 	senha: {
 		type: String,
 		required: true
-	},
-	flgLiberado : {
-		type: Boolean
-	},
-	endereco:   {
-		tipoLogr: String,
-		logr: String,
-		num: String,
-		bairro: String,
-		cidade: String,
-		uf: String,
-		cep: String
-	},
-	loc: {
-	    type: [Number],  // [<longitude>, <latitude>]
-	    index: '2d'      // create the geospatial index
-    },
-
-	// ===================
-	// 		Prestador
-	// ===================
-
-	tipoServ: 'String',
-	diferenciais: [ { titulo: String, descricao: String } ]
+	}
 	
 });
 
@@ -70,4 +45,4 @@ usuarioSchema.methods.verificarSenha = function (passw, cb) {
 	});
 };
 
-module.exports = mongoose.model('Usuario', usuarioSchema);
+module.exports = mongoose.model('usuario', usuarioSchema);
