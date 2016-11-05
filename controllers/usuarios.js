@@ -26,7 +26,7 @@ function postUsuario(req, res) {
 			res.send({ message: 'Ocorreu um erro ao tentar salvar o usuário.' });
 			//console.log(err);
 		} else {
-			res.send({ success: true, message: 'Usuário cadastrado. Aguarde a liberação do administrador.',
+			res.send({ success: true, message: 'Usuário cadastrado com sucesso! Bem vindo ao kutovapp!.',
 				idUsuario: usuario._id, usuario: usuario });
 		}
 	});
