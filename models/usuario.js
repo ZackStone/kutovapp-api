@@ -12,7 +12,7 @@ var usuarioSchema = new Schema({
 	senha: {
 		type: String,
 		required: true
-	}
+	},
 	foto: String
 	
 });
