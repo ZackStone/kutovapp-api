@@ -13,6 +13,7 @@ var usuarioSchema = new Schema({
 		type: String,
 		required: true
 	}
+	foto: String
 	
 });
 
